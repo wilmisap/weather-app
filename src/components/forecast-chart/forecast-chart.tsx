@@ -1,6 +1,15 @@
 import { type } from "os";
 import React from "react";
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from "recharts";
+import {
+  LineChart,
+  Line,
+  CartesianGrid,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
 export type ForecastChartType = {
   dayHour: string;
@@ -14,10 +23,8 @@ interface ForecastChartProps {
 
 const ForecastChart: React.FC<ForecastChartProps> = ({ data }) => {
   return (
-    <div>
+    <ResponsiveContainer height={250} width={"95%"}>
       <LineChart
-        height={250}
-        width={700} 
         margin={{ top: 20, bottom: 20, left: 5, right: 5 }}
         data={data}
       >
@@ -29,7 +36,7 @@ const ForecastChart: React.FC<ForecastChartProps> = ({ data }) => {
         <Line type="monotone" dataKey="max" stroke="#ff0000"></Line>
         <Line type="monotone" dataKey="min" stroke="#0000ff"></Line>
       </LineChart>
-    </div>
+    </ResponsiveContainer>
   );
 };
 

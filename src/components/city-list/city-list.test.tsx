@@ -16,7 +16,7 @@ test("CityList render", async () => {
     <CityList cities={cities} onClickCity={fnClickOnItem} />
   );
 
-  const temp = await findAllByRole("listitem");
+  const temp = await findAllByRole("button");
 
   expect(temp).toHaveLength(cities.length);
 });
