@@ -1,8 +1,10 @@
+import { Paper } from "@material-ui/core";
 import React from "react";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
+import AppFrame from "../components/app-frame/app-frame";
 import { RoutesPath } from "../config/routes";
-import CityList from './../components/city-list/city-list'
+import CityList from "./../components/city-list/city-list";
 
 const cities = [
   { city: "Buenos Aires ", country: "Argentina" },
@@ -17,11 +19,12 @@ const MainPage = () => {
     history.push(RoutesPath.city);
   };
   return (
-    <div>
-      <h2>Lista de ciudades</h2>
-      <CityList cities={cities} onClickCity={onClickHandler} />
-    </div>
-  ); 
+    <AppFrame>
+      <Paper elevation={3}>
+        <CityList cities={cities} onClickCity={onClickHandler} />
+      </Paper>
+    </AppFrame>
+  );
 };
 
 export default MainPage;

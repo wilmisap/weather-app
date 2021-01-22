@@ -5,9 +5,9 @@ import AppRoot from './app-root';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <AppRoot />
-  </React.StrictMode>,
+  // <React.StrictMode>
+    <AppRoot />,
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 

@@ -9,10 +9,7 @@ import { RoutesPath } from "./config/routes";
 
 const AppRoot = () => {
   return (
-    <Grid container justify="center" direction="row">
-      <Grid item xs={12} sm={11} md={10} lg={8}>
-      <h1>AppRoot</h1>
-      <Router>
+    <Router>
         <Switch>
           <Route exact path={RoutesPath.welcome}>
             <WelcomePage />
@@ -28,8 +25,6 @@ const AppRoot = () => {
           </Route>
         </Switch>
       </Router>
-      </Grid>
-    </Grid>
   );
 };
 
