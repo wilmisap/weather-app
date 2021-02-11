@@ -1,21 +1,24 @@
 import React from 'react'
 import {
-  WiCloud,
   WiDayCloudy,
-  WiDayFog,
   WiDaySunny,
   WiRain,
+  WiSnow,
+  WiRaindrop,
+  WiThunderstorm
 } from "react-icons/wi";
-import { IconContext } from "react-icons";
+import { IconContext } from "react-icons";  
 
-export type WeatherState = "cloud" | "cloudy" | "fog" | "sunny" | "rain";
+export type WeatherState = "clouds" | "clear" | "rain" | "snow" | "drizzle" | "thunderstorm";
 
-const stateByName = {
-  cloud: WiCloud,
-  cloudy: WiDayCloudy,
-  fog: WiDayFog,
-  sunny: WiDaySunny,
+const stateByName = {  
+  clouds: WiDayCloudy,
+  clear: WiDaySunny,
   rain: WiRain,
+  snow: WiSnow,
+  drizzle:WiRaindrop,
+  thunderstorm: WiThunderstorm ,
+
 };
 
 interface IconStateProps {

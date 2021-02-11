@@ -4,13 +4,13 @@ import Forecast from "./forecast";
 import { ForecastItemProps } from "../forecast-item/forecast-item";
 
 const forecast: ForecastItemProps[] = [
-  { weekDay: "Lunes", hour: 10, state: "sunny", temperature: 23 },
-  { weekDay: "Martes", hour: 10, state: "cloud", temperature: 23 },
-  { weekDay: "Miercoles", hour: 10, state: "cloudy", temperature: 23 },
+  { weekDay: "Lunes", hour: 10, state: "rain", temperature: 23 },
+  { weekDay: "Martes", hour: 10, state: "rain", temperature: 23 },
+  { weekDay: "Miercoles", hour: 10, state: "rain", temperature: 23 },
   { weekDay: "Jueves", hour: 10, state: "rain", temperature: 23 },
-  { weekDay: "Viernes", hour: 10, state: "fog", temperature: 23 },
+  { weekDay: "Viernes", hour: 10, state: "rain", temperature: 23 },
   { weekDay: "Sabado", hour: 10, state: "rain", temperature: 23 },
-  { weekDay: "Domingo", hour: 10, state: "sunny", temperature: 23 },
+  { weekDay: "Domingo", hour: 10, state: "rain", temperature: 23 },
 ];
 
 test("Forecast render", async () => {

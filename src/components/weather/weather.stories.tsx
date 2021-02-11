@@ -8,19 +8,19 @@ export default {
 };
 
 export const WeatherExampleCloud = () => (
-  <Weather temperature="10" state="cloud" />
+  <Weather temperature="10" state="rain" />
 );
 
 export const WeatherExampleCloudy = () => (
-  <Weather temperature="10" state="cloudy" />
+  <Weather temperature="10" state="rain" />
 );
 
-export const WeatherExampleFog = () => <Weather temperature="10" state="fog" />;
+export const WeatherExampleFog = () => <Weather temperature="10" state="rain" />;
 
 export const WeatherExampleRain = () => (
   <Weather temperature="10" state="rain" />
 );
 
 export const WeatherExampleSunny = () => (
-  <Weather temperature="5" state="sunny" />
+  <Weather temperature="5" state="rain" />
 );

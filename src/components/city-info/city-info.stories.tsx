@@ -8,5 +8,5 @@ export default {
 };
 
 export const CityExample = () => (
-  <CityInfo city={"Buenos Aires"} country={"Argentina"} />
+  <CityInfo city={"Buenos Aires"} country={"Argentina"} countryCode={"countryCode"} />
 );

@@ -6,9 +6,10 @@ test("CityInfo render", async () => {
   // AAA
 
   const city = "Buenos Aires";
-  const country = "ARgentina";
+  const country = "Argentina";
+  const countryCode = "AB";
 
-  const { findAllByRole } = render(<CityInfo city={city} country={country} />);
+  const { findAllByRole } = render(<CityInfo city={city} country={country} countryCode={countryCode}  />);
 
   const cityAndCountryComponents = await findAllByRole("heading");
 

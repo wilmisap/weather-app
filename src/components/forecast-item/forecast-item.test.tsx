@@ -4,7 +4,7 @@ import ForecastItem from "./forecast-item";
 
 test("ForecastItem render", async () => {
   const { findByText } = render(
-    <ForecastItem weekDay="Lunes" hour={10} state="sunny" temperature={23} />
+    <ForecastItem weekDay="Lunes" hour={10} state="rain" temperature={23} />
   );
 
   const weekDay = await findByText(/Lunes/);

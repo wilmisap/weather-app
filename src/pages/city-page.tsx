@@ -44,19 +44,20 @@ const dataExample: ForecastChartType[] = [
 ];
 
 const forecastItemListExample: ForecastItemProps[] = [
-  { weekDay: "Lunes", hour: 10, state: "sunny", temperature: 23 },
-  { weekDay: "Martes", hour: 10, state: "cloud", temperature: 23 },
-  { weekDay: "Miercoles", hour: 10, state: "cloudy", temperature: 23 },
+  { weekDay: "Lunes", hour: 10, state: "rain", temperature: 23 },
+  { weekDay: "Martes", hour: 10, state: "rain", temperature: 23 },
+  { weekDay: "Miercoles", hour: 10, state: "rain", temperature: 23 },
   { weekDay: "Jueves", hour: 10, state: "rain", temperature: 23 },
-  { weekDay: "Viernes", hour: 10, state: "fog", temperature: 23 },
+  { weekDay: "Viernes", hour: 10, state: "rain", temperature: 23 },
   { weekDay: "Sabado", hour: 10, state: "rain", temperature: 23 },
-  { weekDay: "Domingo", hour: 10, state: "sunny", temperature: 23 },
+  { weekDay: "Domingo", hour: 10, state: "rain", temperature: 23 },
 ];
 
 const CityPage = () => {
   const city = "Buenos Aires";
   const country = "Argentina";
-  const state = "cloudy";
+  const countryCode = "AB";
+  const state = "rain";
   const temperature = "20";
   const humidity = 80;
   const wind = 5;
@@ -67,7 +68,7 @@ const CityPage = () => {
     <AppFrame>
       <Grid container justify="space-around" direction="column" spacing={2}>
         <Grid item container xs={12} justify="center" alignItems="flex-end">
-          <CityInfo city={city} country={country} />
+          <CityInfo city={city} country={country} countryCode={countryCode} />
         </Grid>
         <Grid container item justify="center" xs={12}>
           <Weather state={state} temperature={temperature} />

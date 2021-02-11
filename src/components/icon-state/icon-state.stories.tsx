@@ -7,12 +7,12 @@ export default {
   component: IconState,
 };
 
-export const IconStateExampleCloud = () => <IconState state="cloud" />;
+export const IconStateExampleCloud = () => <IconState state="rain" />;
 
-export const IconStateExampleCloudy = () => <IconState state="cloudy" />;
+export const IconStateExampleCloudy = () => <IconState state="rain" />;
 
-export const IconStateExampleFog = () => <IconState state="fog" />;
+export const IconStateExampleFog = () => <IconState state="rain" />;
 
 export const IconStateExampleRain = () => <IconState state="rain" />;
 
-export const IconStateExampleSunny = () => <IconState state="sunny" />;
+export const IconStateExampleSunny = () => <IconState state="rain" />;

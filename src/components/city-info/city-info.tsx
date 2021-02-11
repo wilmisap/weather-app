@@ -4,9 +4,10 @@ import Typography from "@material-ui/core/Typography";
 export interface City {
   city: string;
   country: string;
+  countryCode: string;
 }
 
-const CityInfo: React.FC<City> = ({ city, country }) => {
+const CityInfo: React.FC<City> = ({ city, country, }) => {
   return (
     <>
       <Typography display="inline" variant="h4">
